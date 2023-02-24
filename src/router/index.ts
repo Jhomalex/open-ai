@@ -1,12 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import ChatView from '../views/ChatView.vue';
 import WelcomeView from '../views/WelcomeView.vue';
 
 const router = createRouter({
-	history: createWebHistory('#'),
+	history: createWebHashHistory(),
 	routes: [
 		{
-			path: '/welcome',
+			path: '/',
 			name: 'welcome',
 			component: WelcomeView,
 		},
